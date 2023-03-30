@@ -70,7 +70,9 @@ img {
   margin-bottom: 1.5rem;
 }
 hr {
-  width: 111%;
+  width: 110%;
+  height: 0.5px;
+  background-color: var(--natr-color1);
   margin-bottom: 1rem;
 }
 
