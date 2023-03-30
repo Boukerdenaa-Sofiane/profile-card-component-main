@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  --prim-color1: hsl(185, 75%, 39%);
+  --prim-color2: hsl(229, 23%, 23%);
+  --prim-color3: hsl(227, 10%, 46%);
+
+  --natr-color1: hsl(0, 0%, 59%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  font-size: 1.125rem;
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: var(--prim-color1);
+  margin: 0 1.5rem;
+  display: grid;
+  place-content: center;
+  background-image: url(images/bg-pattern-top.svg),
+    url(images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom 43vh right 47vw, left 47vw top 54vh;
+}
+.container {
+  background-color: #fff;
+  max-width: 27rem;
+  border-radius: 15px;
+}
+.bottm-sect img {
+  margin-top: -64px;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 1rem;
+}
+img {
+  display: block;
+  border-radius: 15px 15px 0 0;
+}
+.bottm-sect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+.bottm-sect img {
+  width: 100px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+.name {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.name h1 {
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+}
+.name p {
+  color: var(--prim-color3);
+}
+.london {
+  color: var(--prim-color3);
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+hr {
+  width: 111%;
+  margin-bottom: 1rem;
+}
+
+.social {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.social h1 {
+  font-size: 1.1rem;
+  margin-bottom: 0.2rem;
+}
+.social p {
+  font-size: 0.8rem;
+  color: var(--natr-color1);
+}
+h1 {
+  color: var(--prim-color2);
+  font-weight: 700;
+}
+p {
+  font-weight: 400;
+}
+@media (max-width: 380px) {
+  body {
+    background-position: bottom 50vh right 47vw, left 34vw top 47vh;
+    margin: 0 1.5rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .social {
+    flex-direction: column;
+  }
+  .social p {
+    margin-bottom: 1rem;
+  }
+}
