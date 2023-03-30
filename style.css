@@ -72,7 +72,8 @@ img {
 hr {
   width: 110%;
   height: 0.5px;
-  background-color: var(--natr-color1);
+  background-color: rgb(226, 226, 226);
+  opacity: 0.5;
   margin-bottom: 1rem;
 }
 
